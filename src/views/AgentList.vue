@@ -57,7 +57,7 @@
           <tbody>
             <tr v-for="a in agents" :key="a.id" :class="{ 'row-new': a.id === newestId }">
               <td>
-                <router-link :to="`/agents/${a.id}`" class="agent-name-cell">
+                <router-link :to="`/agents/${a.id}/edit`" class="agent-name-cell">
                   <span class="agent-avatar">{{ initials(a) }}</span>
                   <span class="agent-fullname">{{ a.firstName }} {{ a.lastName }}</span>
                 </router-link>
